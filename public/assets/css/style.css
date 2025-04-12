@@ -1,5 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-// @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
@@ -87,7 +86,7 @@ a:focus {
 /*header section*/
 .hero_area {
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
