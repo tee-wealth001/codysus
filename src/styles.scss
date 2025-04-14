@@ -944,45 +944,55 @@ a:focus {
 /*# sourceMappingURL=style.css.map */
 
 
-.about_section  ul{
+.about_section ul {
   list-style: none;
 }
 
-.about_section ul > li::before {
+.about_section ul>li::before {
   content: "🔵";
   background-color: #ffffff;
   transform: scale(0.2);
   display: inline-block;
   animation: pulse infinite alternate 0.9s;
 }
-.about_section ul > li:nth-child(1)::before {
+
+.about_section ul>li:nth-child(1)::before {
   animation-delay: -0.2s;
 }
-.about_section ul > li:nth-child(2)::before {
+
+.about_section ul>li:nth-child(2)::before {
   animation-delay: -0.4s;
 }
-.about_section ul > li:nth-child(3)::before {
+
+.about_section ul>li:nth-child(3)::before {
   animation-delay: -0.6s;
 }
-.about_section ul > li:nth-child(4)::before {
+
+.about_section ul>li:nth-child(4)::before {
   animation-delay: -0.8s;
 }
-.about_section ul > li:nth-child(5)::before {
+
+.about_section ul>li:nth-child(5)::before {
   animation-delay: -1s;
 }
-.about_section ul > li:nth-child(6)::before {
+
+.about_section ul>li:nth-child(6)::before {
   animation-delay: -1.2s;
 }
-.about_section ul > li:nth-child(7)::before {
+
+.about_section ul>li:nth-child(7)::before {
   animation-delay: -1.4s;
 }
-.about_section ul > li:nth-child(8)::before {
+
+.about_section ul>li:nth-child(8)::before {
   animation-delay: -1.6s;
 }
-.about_section ul > li:nth-child(9)::before {
+
+.about_section ul>li:nth-child(9)::before {
   animation-delay: -1.8s;
 }
-.about_section ul > li:nth-child(10)::before {
+
+.about_section ul>li:nth-child(10)::before {
   animation-delay: -2s;
 }
 
@@ -990,4 +1000,17 @@ a:focus {
   to {
     transform: scale(0.69);
   }
+}
+
+#customCarousel2 .carousel-indicators {
+  bottom: -25px;
+
+}
+
+.carousel-indicators .active {
+  background-color: #0f054c;
+}
+
+.carousel-indicators li {
+  background-color: #e4e4e4;
 }
