@@ -4,8 +4,8 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent }, // Define home explicitly
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect root to home
-  { path: '**', redirectTo: '/home' } // Handle undefined routes
+  { path: '', redirectTo: 'home', pathMatch: 'full' }, // Redirect root to home
+  { path: '**', redirectTo: 'home' } // Handle undefined routes
 ];
 
 @NgModule({
