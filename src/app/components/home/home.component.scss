@@ -103,6 +103,17 @@
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     border: none;
-    margin-top: 15px;
     margin-bottom: 15px;
+}
+
+#calendly-container {
+    min-width: 320px;
+    height: 630px;
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    #calendly-container {
+        height: 450px;
+    }
 }
