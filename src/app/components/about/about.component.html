@@ -228,61 +228,16 @@
             </h2>
 
             <p>
-                We teach languages and frameworks that are in high demand in the industry. Our curriculum is designed to
+                We teach languages, IDE and frameworks that are in high demand in the industry. Our curriculum is designed to
                 be hands-on and practical, ensuring that you gain real-world experience and skills that are relevant to
                 today’s job market. We also stay up-to-date with the latest trends and technologies, so you can be sure
                 you’re learning the most current and in-demand skills.
             <p>
         </div>
         <div class="why_container">
-            <div class="box">
+            <div class="box" *ngFor="let image of techStackImages">
                 <div class="img-box">
-                    <img src="assets/images/techstack/angular.png" alt="" class="hvr-bob">
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="assets/images/techstack/c++.png" alt="" class="hvr-bob">
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="assets/images/techstack/css.png" alt="" class="hvr-bob">
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="assets/images/techstack/github.png" alt="" class="hvr-bob">
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="assets/images/techstack/html.png" alt="" class="hvr-bob">
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="assets/images/techstack/java.png" alt="" class="hvr-bob">
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="assets/images/techstack/javascript.png" alt="" class="hvr-bob">
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="assets/images/techstack/nodejs.png" alt="" class="hvr-bob">
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="assets/images/techstack/python.png" alt="" class="hvr-bob">
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="assets/images/techstack/react.png" alt="" class="hvr-bob">
+                    <img [src]="'assets/images/techstack/' + image" alt="{{ image }}" class="hvr-bob">
                 </div>
             </div>
         </div>
