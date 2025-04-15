@@ -4,3 +4,12 @@ header {
     width: 100%;
     z-index: 1000;
 }
+
+.active {
+    color: #00bbf0;
+    font-weight: bold;
+  }
+
+  li{
+    cursor: pointer;
+  }
