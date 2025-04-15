@@ -41,6 +41,21 @@ export class AboutComponent {
     'flutter.png',
     'datascience.png',
   ];
-  
+
+  clientImages = [
+    'ccl.png',
+    'j4c.png',
+    'gdg.png',
+    'immigo.png',
+    'tes.png',
+    'thevoice.png',
+    'ccl.png',
+    'j4c.png',
+    'gdg.png',
+    'immigo.png',
+    'tes.png',
+    'thevoice.png',
+  ]
+
 
 }
