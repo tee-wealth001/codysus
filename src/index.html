@@ -36,14 +36,6 @@
     <div data-netlify-recaptcha="true"></div>
   </form> -->
 
-  <form name="contact" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true" hidden>
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <textarea name="body"></textarea>
-    <div data-netlify-recaptcha="true"></div>
-  </form>
-  
-  
 
   <!-- jQery -->
   <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
@@ -65,7 +57,17 @@
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async>
   </script>
 
+<!-- reCAPTCHA Script -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- Hidden dummy form so Netlify detects it during build -->
+<form name="contact" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true" hidden>
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <textarea name="body"></textarea>
+  <div data-netlify-recaptcha="true"></div>
+</form>
+
 
 </body>
 
