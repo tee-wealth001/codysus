@@ -1,0 +1,19 @@
+.contact-info {
+    padding: 45px 0 15px 0;
+
+    .contact_link_box {
+        display: inline-flex;
+        flex-direction: column;
+
+        a {
+            margin: 1rem 1rem 1rem 0rem;
+            padding: 1rem;
+            background: linear-gradient(130deg, #231a6f, #0f054c);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.222);
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            border-radius: 0.5rem;
+        }
+    }
+}
