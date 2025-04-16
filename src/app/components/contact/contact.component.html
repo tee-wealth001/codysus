@@ -67,7 +67,7 @@
                         soon as I can.
                     </div>
                     <form *ngIf="!isContactFormSubmitted" name="contact" [formGroup]="contactForm" method="POST"
-                        (ngSubmit)="onSubmit($event)" netlify>
+                        (ngSubmit)="onSubmit($event)" netlify data-netlify-recaptcha="true" data-netlify="true">
                         <!-- This input field is very important to add, at least when we submit the form, making sure Netlify can receive the submission  -->
                         <input type="hidden" name="form-name" value="contact" />
                         <label for="name">Name</label>
@@ -89,6 +89,7 @@
                             <small *ngIf="body.errors?.['required']">Message is required</small>
                         </div>
                         <textarea id="body" type="text" rows="4" cols="50" formControlName="body" required></textarea>
+                        <div data-netlify-recaptcha="true"></div>
                         <button type="submit" [disabled]="!contactForm.valid">Send message</button>
                     </form>
 
