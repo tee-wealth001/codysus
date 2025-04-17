@@ -80,11 +80,8 @@
                                     <div class="screen-body-item">
                                         <div class="app-form">
 
-                                            <div *ngIf="isContactFormSubmitted">
+                                            <div *ngIf="isContactFormSubmitted" class="success-alert alert-success p-4">
                                                 Thank you for reaching out! Your message has been successfully sent.
-                                                I'll
-                                                get back to you as
-                                                soon as I can.
                                             </div>
                                             <form *ngIf="!isContactFormSubmitted" name="contact"
                                                 [formGroup]="contactForm" method="POST" (ngSubmit)="onSubmit($event)"
