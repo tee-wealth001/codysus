@@ -67,19 +67,14 @@
                         soon as I can.
                     </div>
                     <form *ngIf="!isContactFormSubmitted" name="contact" [formGroup]="contactForm" method="POST"
-                        (ngSubmit)="onSubmit($event)" netlify data-netlify-recaptcha="true" data-netlify="true">
+                        (ngSubmit)="onSubmit($event)" netlify>
                         <!-- This input field is very important to add, at least when we submit the form, making sure Netlify can receive the submission  -->
                         <input type="hidden" name="form-name" value="contact" />
-
-                        <!-- Honeypot (spam protection) -->
-                        <p hidden>
-                            <label>Don’t fill this out: <input name="bot-field" /></label>
-                        </p>
                         <label for="name">Name</label>
                         <div *ngIf="name && name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
                             <small *ngIf="name.errors?.['required']">Name is required</small>
                         </div>
-                        <input id="name" type="text" name="name" formControlName="name" required />
+                        <input id="name" type="text" formControlName="name" required />
 
                         <label for="email">Email</label>
                         <div *ngIf="email && email.invalid && (email.dirty || email.touched)"
@@ -87,15 +82,13 @@
                             <small *ngIf="email.errors?.['required']">Email is required</small>
                             <small *ngIf="email.errors?.['email']">Enter a valid email address</small>
                         </div>
-                        <input id="email" type="email" name="email" formControlName="email" required />
+                        <input id="email" type="email" formControlName="email" required />
 
                         <label for="body">Message</label>
                         <div *ngIf="body && body.invalid && (body.dirty || body.touched)" class="alert alert-danger">
                             <small *ngIf="body.errors?.['required']">Message is required</small>
                         </div>
-                        <textarea id="body" type="text" rows="4" cols="50" name="body" formControlName="body"
-                            required></textarea>
-                        <div data-netlify-recaptcha="true"></div>
+                        <textarea id="body" type="text" rows="4" cols="50" formControlName="body" required></textarea>
                         <button type="submit" [disabled]="!contactForm.valid">Send message</button>
                     </form>
 
